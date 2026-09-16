@@ -6,12 +6,15 @@ This project describes a 6-way receive antenna switch I built for a fellow radio
 
 Control unit and relay box communicate “digitally” by sending some pulses to and fro, the number of which determine what the relaybox should actually do. After executing a command, the circuit measures which relay is actually switched on / off and reports this back to the control unit again as a series of pulses. If for whatever reason the reported switch state differs from what has been commanded, an error is indicated so that  the user knows there’s something wrong. This will prevent unnecessary walks from the shack to the antenna connections: what is  indicated on the control unit is the actual state.
 
-![Photo3](images/ant_switch_3.jpg)
+![Photo2](images/ant_switch_3.jpg)
 
 The antennas are connected to the switch on the PVC junction box. I have made quite some effort in making the box and connections that are located outside of the box as watertight as possible but I guess that it is still advisable to make some additional protection to prevent direct exposure to the environment.
 
-![Photo2](images/ant_switch_2.jpg)
+![Photo3](images/ant_switch_2.jpg)
+
+![Drawing1](images/ant_switch_5.jpg)
 
 You can find the schematics of both units both as PDF and KiCAD v10 files as well as the C sources. I have also included BOM files for the PCB’s. There’s some additional hardware required such as stainless steel hardware for the antenna connections and switches to control the relays; these are not mentioned in these files. I have built the software in MPLAB IDE with the XC8 1.33 compiler. The C source should also compile in the newer MPLAB X IDE with the newer compiler versions but I believe that there are some minor syntax changes between the old and new versions which obviously need to be resolved. Google will be your friend for that, I guess.
 
 ![Photo4](images/ant_switch_4.jpg)
+
