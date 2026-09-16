@@ -12,6 +12,7 @@ The antennas are connected to the switch on the PVC junction box. I have made qu
 
 ![Photo3](images/ant_switch_2.jpg)
 
+
 ![Drawing1](images/ant_switch_5.jpg)
 
 You can find the schematics of both units both as PDF and KiCAD v10 files as well as the C sources. I have also included BOM files for the PCB’s. There’s some additional hardware required such as stainless steel hardware for the antenna connections and switches to control the relays; these are not mentioned in these files. I have built the software in MPLAB IDE with the XC8 1.33 compiler. The C source should also compile in the newer MPLAB X IDE with the newer compiler versions but I believe that there are some minor syntax changes between the old and new versions which obviously need to be resolved. Google will be your friend for that, I guess.
